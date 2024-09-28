@@ -1,0 +1,58 @@
+*******************************DEEP LEARNING*******************
+
+op=f(in1*w1+in2*w2+in3*w3)
+
+tensorflow => google
+pytorch    => facebook
+
+tensorflow architecture was different for the version < 2.0
+                        >=2.0
+
+structure of the graph is fixed in tensorflow
+structure of the graph is variable in pytorch
+
+tensorflow > 2.0=> there are two ways to access
+1. native way, 2 Keras way.
+Keras is an interface to access tensorflow
+
+cuda
+
+linear, sigmoid, tanh, relu, leaky relu,softmax
+
+
+
+model = Sequential([
+    Dense(81, activation='relu', input_shape=(X_train.shape[1],)),
+    Dense(400, activation='relu'),
+    Dense(1, activation='sigmoid')  # Output layer for binary classification
+])
+
+optimizers:
+Gradient descent=> gradient is nothing but slope of a line
+descent => the slope is going to come down as the epochs or interations goes
+weights would be updated only when all the data inputs are applied
+
+in stochastic gradient descent:
+in this weights would be modified on eary row of data is applied
+
+Adaptive gradient(Adagrad)
+
+Adaptive momentum(Adam)
+
+CONVOLUTION NUERAL NETWORK (CNN) => for image classification/recognition
+1. reduction in image size to 32x32x3( this is only to bring the image size
+suitable to our laptop's capacity)
+2. pass through convolution layer through kernel size like 2x2 or 3x3 or 5x5
+RELU activation function used here
+3. image will become 16x16x3 or 14x14X3 in pooling layer
+4. flatten layer  makes the matrix in single column layer
+5. dense or fully connected layer learns the patterns
+6. softmax layer converts the values to classes or categories
+SOFTMAX/SIGMOID activation function used here
+
+Convolutions layer
+pooling layer
+flatten
+dense layer
+
+
